@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.5.0)
+  - Cosmos (23.0.0)
+  - IQKeyboardManagerSwift (6.5.9)
+  - JGProgressHUD (2.2)
+  - MOLH (1.4.3)
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cosmos (~> 23.0)
+  - IQKeyboardManagerSwift
+  - JGProgressHUD
+  - MOLH
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cosmos
+    - IQKeyboardManagerSwift
+    - JGProgressHUD
+    - MOLH
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  MOLH: e45827d200aeb1310641090fd8cd03ad2b42ae72
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+
+PODFILE CHECKSUM: 205a4da5fcd61405429598405caf086af51e8f2f
+
+COCOAPODS: 1.8.4

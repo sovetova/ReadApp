@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertControllerVc" customModule="ReadApp" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="idY-ZK-xPV" id="TZ9-C4-gau"/>
+                <outlet property="okButton" destination="99b-FU-Oxf" id="emS-Ha-TU6"/>
+                <outlet property="purpleView" destination="AKh-Ep-Xep" id="6VI-xh-mQz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idY-ZK-xPV" customClass="Viewcustom" customModule="ReadApp" customModuleProvider="target">
+                    <rect key="frame" x="20" y="332" width="374" height="232"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKh-Ep-Xep" customClass="Viewcustom" customModule="ReadApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="121"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Must Write Book Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcG-lB-qXl">
+                                    <rect key="frame" x="31" y="44" width="312" height="33"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <constraints>
+                                <constraint firstItem="mcG-lB-qXl" firstAttribute="centerX" secondItem="AKh-Ep-Xep" secondAttribute="centerX" id="8eg-wQ-BbC"/>
+                                <constraint firstItem="mcG-lB-qXl" firstAttribute="centerY" secondItem="AKh-Ep-Xep" secondAttribute="centerY" id="Jzb-3c-dT9"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99b-FU-Oxf" customClass="CustomeButton" customModule="ReadApp" customModuleProvider="target">
+                            <rect key="frame" x="100" y="144" width="174" height="60"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="0zQ-2D-8L0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="29"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="dismissButton:" destination="-1" eventType="touchUpInside" id="tlR-67-MBm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="AKh-Ep-Xep" firstAttribute="top" secondItem="idY-ZK-xPV" secondAttribute="top" id="CHw-VR-ogx"/>
+                        <constraint firstItem="99b-FU-Oxf" firstAttribute="centerY" secondItem="idY-ZK-xPV" secondAttribute="centerY" multiplier="1.5" id="Qhe-xf-GgI"/>
+                        <constraint firstAttribute="trailing" secondItem="AKh-Ep-Xep" secondAttribute="trailing" id="Rxa-d6-JBf"/>
+                        <constraint firstItem="AKh-Ep-Xep" firstAttribute="height" secondItem="idY-ZK-xPV" secondAttribute="height" multiplier="0.52069" id="fQk-59-mb1"/>
+                        <constraint firstItem="99b-FU-Oxf" firstAttribute="centerX" secondItem="idY-ZK-xPV" secondAttribute="centerX" id="td0-HB-1L5"/>
+                        <constraint firstItem="99b-FU-Oxf" firstAttribute="leading" secondItem="idY-ZK-xPV" secondAttribute="leading" constant="100" id="vA8-PE-am9"/>
+                        <constraint firstItem="AKh-Ep-Xep" firstAttribute="leading" secondItem="idY-ZK-xPV" secondAttribute="leading" id="xNt-4m-gBX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.2498662243150685" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="idY-ZK-xPV" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.903382" id="0MP-iF-qed"/>
+                <constraint firstItem="idY-ZK-xPV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="EDu-DS-Swt"/>
+                <constraint firstItem="idY-ZK-xPV" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.258929" id="NuX-DJ-39M"/>
+                <constraint firstItem="idY-ZK-xPV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mQL-j6-wwN"/>
+            </constraints>
+            <point key="canvasLocation" x="60.869565217391312" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

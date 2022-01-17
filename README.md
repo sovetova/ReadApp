@@ -1,3 +1,4 @@
 # ReadApp
  Simpe read book app
-[Design in Figma](https://www.figma.com/file/4BxSP1UMZi2IsBpgvF8V9W/TenZen-Project?node-id=0%3A1)
+ 
+[Design in Figma](https://www.figma.com/file/A1s4Z7yeRdWeKBEg3spnHU/Read-App-Project)
